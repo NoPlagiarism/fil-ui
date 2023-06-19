@@ -1,0 +1,31 @@
+name: Generate HTMLs
+
+on:
+  schedule: 
+    - cron: '00 12 */7 * *'
+  workflow_dispatch:
+
+
+jobs:
+  build:
+
+  runs-on: ubuntu-latest
+
+  steps:
+  - uses: actions/checkout@v3
+  - name: Set up Python 3.10
+    uses: actions/setup-python@v3
+    with:
+      python-version: "3.10"
+  - name: Install dependencies
+    run: |
+      python -m pip install -U pip
+      pip install httpx
+  - name: Run R
+    run: python scripts/v1_r.py
+  - name: Commit and push
+    uses: EndBug/add-and-commit@v9
+    with:
+      message: 'Update HTMLs'
+      default_author: github_actions
+      push: true
