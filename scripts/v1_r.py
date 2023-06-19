@@ -73,9 +73,9 @@ def main():
         if dirpath.split("\\")[-1].startswith('.') or dirpath == R_PATH:
             continue
         if len(files) > 1:
-            url = join_path_to_tree(dirpath.split("\\")[-1])
+            url = join_path_to_tree(os.path.basename(dirpath))
         else:
-            url = join_path_to_tree("/".join((dirpath.split("\\")[-1], files[0].split('.html')[0])))
+            url = join_path_to_tree("/".join((os.path.basename(dirpath), files[0].split('.html')[0])))
         HTMLCreator.create_html(os.path.join(dirpath, "index.html"), url)
 
 
