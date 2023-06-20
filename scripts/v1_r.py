@@ -39,7 +39,8 @@ def get_all_json():
 
 
 def recreate_directory(path):
-    shutil.rmtree(path)
+    if os.path.exists(path):
+        shutil.rmtree(path)
     os.makedirs(path)
 
 
