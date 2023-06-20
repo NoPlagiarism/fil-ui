@@ -70,7 +70,7 @@ BASE_INSTANCES = "https://raw.githubusercontent.com/NoPlagiarism/frontend-instan
 ALL_JSON_URL = join_urls(BASE_INSTANCES, "all.json")
 ALL_MD_URL = join_urls(BASE_INSTANCES, "all.md")
 INSTANCES_MD_URL = BASE_INSTANCES + "{path}/ReadMe.MD"
-BASE_URL = "https://fil.noplagi,xyz/n/"
+BASE_URL = "https://fil.noplagi.xyz/n/"
 
 ROOT_PATH = os.path.dirname(os.path.dirname(__file__))
 N_PATH = os.path.join(ROOT_PATH, "n")
