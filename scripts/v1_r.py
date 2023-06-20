@@ -4,6 +4,11 @@ import shutil
 
 import httpx
 
+try:
+    from .fil_utils import join_urls, recreate_directory
+except ImportError:
+    from fil_utils import join_urls, recreate_directory
+
 HTML_TEMPLATE = """<!DOCTYPE html>
 <html>
     <head>
@@ -26,22 +31,12 @@ ROOT_PATH = os.path.dirname(os.path.dirname(__file__))
 R_PATH = os.path.join(ROOT_PATH, "r")
 
 
-def join_urls(a, b):
-    return httpx.URL(a).join(b)
-
-
 def join_path_to_tree(path):
     return join_urls(INSTANCES_TREE_URL, path)
 
 
 def get_all_json():
     return httpx.get(ALL_JSON_URL).json()
-
-
-def recreate_directory(path):
-    if os.path.exists(path):
-        shutil.rmtree(path)
-    os.makedirs(path)
 
 
 class HTMLCreator:
