@@ -16,7 +16,7 @@ Renders instance list full-page using [zero-md](https://github.com/zerodevx/zero
 
 [`fil.noplagi.xyz/n/nitter`](https://fil.noplagi.xyz/n/nitter) - nitter instances in one page
 
-[`fil.noplagi.xyz/r/reddit`](https://fil.noplagi.xyz/r/reddit) - links to pages with instances of reddit alternatives
+[`fil.noplagi.xyz/n/reddit`](https://fil.noplagi.xyz/n/reddit) - links to pages with instances of reddit alternatives
 
 [`fil.noplagi.xyz/n`](https://fil.noplagi.xyz/n) - All instances in one page
 
