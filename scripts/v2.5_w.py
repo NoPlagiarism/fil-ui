@@ -25,7 +25,7 @@ def get_all_json():
 
 
 def link_gen(x):
-    return join_urls(BASE_URL, x + '.html')
+    return join_urls(BASE_URL, x)
 
 
 data: dict = get_all_json()
