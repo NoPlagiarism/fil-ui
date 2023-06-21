@@ -24,6 +24,7 @@ jobs:
       run: python scripts/v1_r.py
     - name: Run N
       run: python scripts/v2_n.py
+    - name: Run W
     - name: Commit and push
       uses: EndBug/add-and-commit@v9
       with:

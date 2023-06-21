@@ -21,4 +21,8 @@ Renders instance list full-page using [zero-md](https://github.com/zerodevx/zero
 [`fil.noplagi.xyz/n`](https://fil.noplagi.xyz/n) - All instances in one page
 
 
+## /w/
+Same as /n/, but with "static" navbar that rendered by [zero-md](https://github.com/zerodevx/zero-md)
+
+
 [fil-ui github repo](https://github.com/NoPlagiarism/fil-ui)
