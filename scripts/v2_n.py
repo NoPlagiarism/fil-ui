@@ -113,6 +113,8 @@ def main():
             continue
         if len(files) > 1:
             HTMLCreator.write_html_file(os.path.join(dirpath, "index.html"), HTMLTemplates.get_inline_html(os.path.basename(dirpath), HTMLCreator.create_md_list(files)))
+        else:
+            shutil.copy(os.path.join(dirpath, files[0]), os.path.join(dirpath, "index.html"))
 
 
 
