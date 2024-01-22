@@ -1,4 +1,7 @@
 # [Frontend Instances List](https://github.com/NoPlagiarism/frontend-instances-list) UI
+
+> work temporarily paused
+
 > [/r/](https://fil.noplagi.xyz/r/) + [/n/](https://fil.noplagi.xyz/n/) + [/w/](https://fil.noplagi.xyz/w/)
 
 ## [/r/](https://fil.noplagi.xyz/r/)
